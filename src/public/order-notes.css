@@ -1,0 +1,37 @@
+.add_order-note {
+
+    width: 8rem;
+    height: 2.2rem;
+
+}
+
+.title_order-notes {
+    font-size: 26px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.container_global {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.header_order-notes_table {
+    height: 30px;
+}
+
+.order-notes_table{
+    margin-top: 20px;
+}
+
+.container_order-notes {
+    margin-top: 50px;
+}
+
+td:last-child {
+    text-align: right;
+    font-weight: bolder;
+    color: rgb(221, 221, 221);
+}

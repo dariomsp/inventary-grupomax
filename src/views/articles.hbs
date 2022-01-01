@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="articles.css">
+<link rel="stylesheet" href="modal-add-article.css">
+
+<button type="button" class="up_button">></button>
+
+<div class="modal" id="modal1">
+<div class="container_add-article_modal">
+    <div class="content_add-article_modal">
+        <div class="container_title_add_article">
+        <h3 class="title_add-article_modal">Agregar artículo</h3>
+        </div>
+        <div class="form">
+        <form action="articulos/agregar" method="post">
+            <label for="descrition"> Descripción
+                <input type="text" name="descrition" id="descrition">
+            </label>
+            <label for="category_id"> Categoría
+                <select name="category_id" id="category_id">
+                    {{#each categories}}
+                        <option value="{{{ category_id }}}">{{{ description }}}</option>
+                    {{/each}}
+                    
+                </select>
+            </label>
+            <label for="unit"> Unidad
+                <input type="text" name="unit" id="unit">
+            </label>
+            <label for="amount"> Cantidad
+                <input type="number" name="amount" id="amount">
+            </label>
+            <button class="modal_button cancel" type="button" onclick="closeModal()">Cancelar</button>
+            <button class="modal_button">Agregar</button>
+        </form>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<div class="container_global">
+<div class="container_articles">
+    
+    <h1 class="title_article">Artículos</h1>
+    <button class="add_article" type="button" onclick="openModal()">Agregar artículo</button>
+
+    
+
+
+
+    <table class="articles_table">
+        <tr class="column_article">
+            <th class="header_articles_table">Descripción</th>
+            <th class="header_articles_table">Categoría</th>
+            <th class="header_articles_table">Unidad</th>
+            <th class="header_articles_table">Cantidad</th>
+
+        </tr>
+        {{#each articles}}
+        <tr class="column_article">
+            <td>{{{descrition}}}</td>
+            <td>{{{description}}}</td>
+            <td>{{{unit}}}</td>
+            <td>{{{amount}}}</td>
+        </tr>
+        {{/each}}
+    </table>
+    </div>
+
+</div>
+
+<script src="app.js"></script>

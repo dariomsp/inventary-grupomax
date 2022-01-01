@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="modal-add-article.css">
+<link rel="stylesheet" href="order-notes.css">
+
+
+
+
+
+
+
+
+
+<div class="container_global">
+<div class="container_order-notes">
+<h1 class="title_order-notes">Notas de pedido</h1>
+<button class="add_order-note" type="button" onclick="openModal()">Agregar nota de pedido</button>
+
+
+<table class="order-notes_table">
+        <tr class="column_order-note">
+            <th class="header_order-notes_table">Número de comprobante</th>
+            <th class="header_order-notes_table">Cliente</th>
+            <th class="header_order-notes_table">Artículo(s)</th>
+
+        </tr>
+        {{#each orderNotes}}
+        <tr class="column_order-note">
+            <td><a href="notas-de-pedido/{{ order-note_id }}">{{{voucher-number}}}</a></td>
+           <td><a href="notas-de-pedido/{{ order-note_id }}">{{{name}}}</a></td>
+           <td><a href="notas-de-pedido/{{ order-note_id }}">{{{amount}}}</a></td>
+        </tr>
+        {{/each}}
+    </table>
+</div>
+</div>
