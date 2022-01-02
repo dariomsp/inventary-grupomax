@@ -21,17 +21,837 @@
             <label for="voucherNumber">Número de comprobante
                 <input type="text" name="voucherNumber" id="voucherNumber">
             </label>
+            <div class="inputs_articles">
+            <div class="article-and-amount_container is-display">
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote" id="lastOrderNote">
+                <label for="article_id" id="label_select"> Artículo #1
+                    <select name="newDetailsOrderNote" id="select_article" class="article_input">
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote" id="amount">
+                </label>
+                <h1 class="addInput_button">+</h1>
+            </div>
             <div class="article-and-amount_container">
-            <label for="article_id" id="label_select"> Artículo
-                <select name="article_id" id="article_id" class="article_input">
-                    {{#each articles}}
-                        <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
-                    {{/each}}
-                </select>
-            </label>
-            <label for="amount"> Cantidad
-                <input type="number" class="amount_input" name="amount" id="amount">
-            </label>
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote2" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #2
+                    <select name="newDetailsOrderNote2" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote2" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote3" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #3
+                    <select name="newDetailsOrderNote3" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote3" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote3" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #4
+                    <select name="newDetailsOrderNote3" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote3" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote4" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #5
+                    <select name="newDetailsOrderNote4" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote4" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote5" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #6
+                    <select name="newDetailsOrderNote5" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote5" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote6" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #7
+                    <select name="newDetailsOrderNote6" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote6" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #8
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #9
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #10
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #11
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #12
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #13
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #14
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #15
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #16
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #17
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #18
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #19
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #20
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #21
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #22
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #23
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #24
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #25
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #26
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #27
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #28
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #29
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #30
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #31
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #32
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #33
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #34
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #35
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #36
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #37
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #38
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #39
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #40
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #41
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #42
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #43
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #44
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #45
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #46
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #47
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #48
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #49
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #50
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #51
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
+            <div class="article-and-amount_container">
+                   
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote7" id="lastOrderNote" disabled>
+                    
+                <label for="article_id" id="label_select"> Artículo #52
+                    <select name="newDetailsOrderNote7" id="select_article" class="article_input" disabled>
+                        {{#each articles}}
+                            <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                        {{/each}}
+                    </select>
+                </label>
+                <label for="amount"> Cantidad
+                    <input type="number" class="amount_input" name="newDetailsOrderNote7" id="amount" disabled>
+                </label>
+                <h1 class="addInput_button" id="removeInput">-</h1>
+            </div>
             </div>
             <button type="button" class="order-note_button cancel" onclick="closeModal()">Cancelar</button>
             <button class="order-note_button">Emitir</button>
@@ -56,7 +876,7 @@
             <tr class="column_order-note">
                 <th class="header_order-notes_table">Número de comprobante</th>
                 <th class="header_order-notes_table">Cliente</th>
-                <th class="header_order-notes_table">Artículo(s)</th>
+                <th class="header_order-notes_table">Artículos</th>
 
             </tr>
             {{#each orderNotes}}
