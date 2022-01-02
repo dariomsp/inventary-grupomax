@@ -1,7 +1,44 @@
-<link rel="stylesheet" href="modal-add-article.css">
-<link rel="stylesheet" href="order-notes.css">
+<link rel="stylesheet" href="css/modal-add-article.css">
+<link rel="stylesheet" href="css/order-notes.css">
+<link rel="stylesheet" href="css/modal-add-order-note.css">
 
 
+<div class="container_modal_order-notes">
+    <div class="modal_order-notes">
+        
+        <div class="title_modal_order-notes">
+            <h3>Agregar nota de pedido</h3>
+        </div>
+        <div class="form_modal_order-notes">
+            <form id="form" action="/notas-de-pedido/agregar" method="post">
+            <label for="client_id">Cliente
+                <select name="client_id" id="client_id">
+                    {{#each clients}}
+                        <option value="{{{ client_id }}}">{{{ name }}}</option>
+                    {{/each}}
+                </select>
+            </label>
+            <label for="voucherNumber">Número de comprobante
+                <input type="text" name="voucherNumber" id="voucherNumber">
+            </label>
+            <div class="article-and-amount_container">
+            <label for="article_id" id="label_select"> Artículo
+                <select name="article_id" id="article_id" class="article_input">
+                    {{#each articles}}
+                        <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
+                    {{/each}}
+                </select>
+            </label>
+            <label for="amount"> Cantidad
+                <input type="number" class="amount_input" name="amount" id="amount">
+            </label>
+            </div>
+            <button type="button" class="order-note_button cancel" onclick="closeModal()">Cancelar</button>
+            <button class="order-note_button">Emitir</button>
+            </form>
+        </div>
+    </div>
+</div>
 
 
 
@@ -10,25 +47,27 @@
 
 
 <div class="container_global">
-<div class="container_order-notes">
-<h1 class="title_order-notes">Notas de pedido</h1>
-<button class="add_order-note" type="button" onclick="openModal()">Agregar nota de pedido</button>
+    <div class="container_order-notes">
+        <h1 class="title_order-notes">Notas de pedido</h1>
+        <button class="add_order-note" type="button" onclick="openModal()">Agregar nota de pedido</button>
 
 
-<table class="order-notes_table">
-        <tr class="column_order-note">
-            <th class="header_order-notes_table">Número de comprobante</th>
-            <th class="header_order-notes_table">Cliente</th>
-            <th class="header_order-notes_table">Artículo(s)</th>
+        <table class="order-notes_table">
+            <tr class="column_order-note">
+                <th class="header_order-notes_table">Número de comprobante</th>
+                <th class="header_order-notes_table">Cliente</th>
+                <th class="header_order-notes_table">Artículo(s)</th>
 
-        </tr>
-        {{#each orderNotes}}
-        <tr class="column_order-note">
-            <td><a href="notas-de-pedido/{{ order-note_id }}">{{{voucher-number}}}</a></td>
-           <td><a href="notas-de-pedido/{{ order-note_id }}">{{{name}}}</a></td>
-           <td><a href="notas-de-pedido/{{ order-note_id }}">{{{amount}}}</a></td>
-        </tr>
-        {{/each}}
-    </table>
+            </tr>
+            {{#each orderNotes}}
+            <tr class="column_order-note">
+                <td><a href="notas-de-pedido/{{ orderNote_id }}">{{{voucherNumber}}}</a></td>
+                <td><a href="notas-de-pedido/{{ orderNote_id }}">{{{name}}}</a></td>
+                <td><a href="notas-de-pedido/{{ orderNote_id }}">{{{amount}}}</a></td>
+            </tr>
+            {{/each}}
+        </table>
+    </div>
 </div>
-</div>
+
+<script src="js/order-notes.js"></script>

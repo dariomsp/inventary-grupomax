@@ -1,3 +1,4 @@
+
 .add_order-note {
 
     width: 8rem;
@@ -35,3 +36,8 @@ td:last-child {
     font-weight: bolder;
     color: rgb(221, 221, 221);
 }
+
+.modal_order-notes{
+    background-color: var(--secondary-color);
+}
+
