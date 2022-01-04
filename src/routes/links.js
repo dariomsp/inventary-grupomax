@@ -53,6 +53,8 @@ router.post('/notas-de-pedido/agregar', async (req,res)=>{
         newDetailsOrderNote12,newDetailsOrderNote13,newDetailsOrderNote14,newDetailsOrderNote15,newDetailsOrderNote16  } = req.body;
     var newDetailsOrderNote1 = [ newDetailsOrderNote ]
     console.log('antes',newDetailsOrderNote1)
+
+    
     if (newDetailsOrderNote2) {
         newDetailsOrderNote1.push(newDetailsOrderNote2)
         
@@ -72,6 +74,23 @@ router.post('/notas-de-pedido/agregar', async (req,res)=>{
     if (newDetailsOrderNote7) {
         newDetailsOrderNote1.push(newDetailsOrderNote7);
     }
+    if (newDetailsOrderNote8) {
+        newDetailsOrderNote1.push(newDetailsOrderNote8)
+    }
+    if (newDetailsOrderNote9) {
+        newDetailsOrderNote1.push(newDetailsOrderNote9)
+    }
+    if (newDetailsOrderNote10) {
+        newDetailsOrderNote1.push(newDetailsOrderNote10)
+    }
+    if (newDetailsOrderNote11) {
+        newDetailsOrderNote1.push(newDetailsOrderNote11)
+    }
+    if (newDetailsOrderNote12) {
+        newDetailsOrderNote1.push(newDetailsOrderNote12)
+    }
+
+
     console.log('Verdadero',newDetailsOrderNote1)
     const newOrderNote = {
         client_id,

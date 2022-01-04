@@ -1,4 +1,5 @@
 
+
 .add_order-note {
 
     width: 8rem;
@@ -15,7 +16,8 @@
 .container_global {
 
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    margin-left: 100px;
 
 }
 

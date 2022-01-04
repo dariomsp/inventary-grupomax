@@ -21,7 +21,7 @@
             <label for="voucherNumber">Número de comprobante
                 <input type="text" name="voucherNumber" id="voucherNumber">
             </label>
-            <div class="inputs_articles">
+            <!--<div class="inputs_articles">
             <div class="article-and-amount_container is-display">
                 <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote" id="lastOrderNote">
                 <label for="article_id" id="label_select"> Artículo #1
@@ -70,17 +70,17 @@
             </div>
             <div class="article-and-amount_container">
                    
-                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote3" id="lastOrderNote" disabled>
+                <input type="hidden" value="{{{ lastOrderNote }}}" name="newDetailsOrderNote4" id="lastOrderNote" disabled>
                     
                 <label for="article_id" id="label_select"> Artículo #4
-                    <select name="newDetailsOrderNote3" id="select_article" class="article_input" disabled>
+                    <select name="newDetailsOrderNote4" id="select_article" class="article_input" disabled>
                         {{#each articles}}
                             <option id="opt" value="{{{ article_id }}}">{{{ descrition }}}</option>
                         {{/each}}
                     </select>
                 </label>
                 <label for="amount"> Cantidad
-                    <input type="number" class="amount_input" name="newDetailsOrderNote3" id="amount" disabled>
+                    <input type="number" class="amount_input" name="newDetailsOrderNote4" id="amount" disabled>
                 </label>
                 <h1 class="addInput_button" id="removeInput">-</h1>
             </div>
@@ -852,7 +852,7 @@
                 </label>
                 <h1 class="addInput_button" id="removeInput">-</h1>
             </div>
-            </div>
+            </div>-->
             <button type="button" class="order-note_button cancel" onclick="closeModal()">Cancelar</button>
             <button class="order-note_button">Emitir</button>
             </form>
